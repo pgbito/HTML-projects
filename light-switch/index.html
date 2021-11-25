@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Switch</title>
+</head>
+
+<body>
+    <script>
+        const key = 'l'
+        let isEnabled = true
+        document.addEventListener('keypress', function (w) {
+
+            if (w.key == key) {
+
+                if (isEnabled == true) {
+                    document.body.style.backgroundColor = 'black'
+                    isEnabled = false
+                }
+                else {
+                    document.body.style.backgroundColor = 'white'
+                    isEnabled = true
+                }
+
+            }
+        })
+    </script>
+</body>
+
+</html>
